@@ -6,8 +6,9 @@
   "scripts": {
     "build": "webpack",
     "open": "webpack-dev-server --open",
-    "start-demo-source": "ROOT=demo-source npm run open",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "start-react": "ROOT=react npm run open",
+    "start-react-router": "ROOT=react-router npm run open"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   "license": "ISC",
   "dependencies": {
     "html-webpack-plugin": "^3.2.0",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",

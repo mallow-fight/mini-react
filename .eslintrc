@@ -17,5 +17,8 @@
     "test": true,
     "document": true,
     "describe": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": false
   }
 }
