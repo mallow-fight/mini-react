@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1552556949433" clover="3.2.0">
+  <project timestamp="1552556949433" name="All files">
+    <metrics statements="37" coveredstatements="31" conditionals="30" coveredconditionals="27" methods="6" coveredmethods="6" elements="73" coveredelements="64" complexity="0" loc="37" ncloc="37" packages="4" files="8" classes="8"/>
+    <package name="__demo_template__.packages.share">
+      <metrics statements="12" coveredstatements="10" conditionals="11" coveredconditionals="10" methods="2" coveredmethods="2"/>
+      <file name="constants.js" path="/Users/mallow/Code/ke/project-origin/__demo_template__/packages/share/constants.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="getComponentType.js" path="/Users/mallow/Code/ke/project-origin/__demo_template__/packages/share/getComponentType.js">
+        <metrics statements="6" coveredstatements="6" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+      </file>
+      <file name="whichType.js" path="/Users/mallow/Code/ke/project-origin/__demo_template__/packages/share/whichType.js">
+        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="demo-basic.packages.react-dom">
+      <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="getComponentType.js" path="/Users/mallow/Code/ke/project-origin/demo-basic/packages/react-dom/getComponentType.js">
+        <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="8" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="demo-basic.packages.share">
+      <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="utils.js" path="/Users/mallow/Code/ke/project-origin/demo-basic/packages/share/utils.js">
+        <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="demo-vdom.packages.share">
+      <metrics statements="12" coveredstatements="10" conditionals="11" coveredconditionals="10" methods="2" coveredmethods="2"/>
+      <file name="constants.js" path="/Users/mallow/Code/ke/project-origin/demo-vdom/packages/share/constants.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="getComponentType.js" path="/Users/mallow/Code/ke/project-origin/demo-vdom/packages/share/getComponentType.js">
+        <metrics statements="6" coveredstatements="6" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+      </file>
+      <file name="whichType.js" path="/Users/mallow/Code/ke/project-origin/demo-vdom/packages/share/whichType.js">
+        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

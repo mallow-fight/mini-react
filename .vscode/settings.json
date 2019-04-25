@@ -1,0 +1,16 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript", {
+      "language": "react",
+      "autoFix": true
+    },
+    "html",
+    "react",
+    "jsx"
+  ],
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false
+}
