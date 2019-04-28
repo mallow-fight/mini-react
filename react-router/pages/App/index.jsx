@@ -67,7 +67,6 @@ class App extends Component {
         <Garden>
           <div>mallow</div>
         </Garden>
-
       </div>
     );
   }
