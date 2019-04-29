@@ -31,14 +31,12 @@ render(
         History路由实现
       </p>
       <HistoryRouter>
-        <p>
-          <Link to="/history1">history1</Link>
-        </p>
-        <p>
-          <Link to="/history2">history2</Link>
-        </p>
-        <HistoryRoute path="history1" component={history1} />
-        <HistoryRoute path="history2" component={history2} />
+        <Link to="/history1">history1</Link>
+        <hr />
+        <Link to="/history2">history2</Link>
+        <hr />
+        <HistoryRoute path="/history1" component={history1} />
+        <HistoryRoute path="/history2" component={history2} />
       </HistoryRouter>
     </div>
     <App name="project-origin" version="1.0.0" />
