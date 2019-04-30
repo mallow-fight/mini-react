@@ -31,10 +31,10 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: [
               // 解析class-properties的插件得放在transform-classes之前
+              ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
               '@babel/plugin-proposal-class-properties',
               '@babel/plugin-transform-classes',
               ['@babel/plugin-transform-arrow-functions', { spec: true }],
-              ['@babel/plugin-proposal-decorators', { legacy: true }],
             ],
           },
         },

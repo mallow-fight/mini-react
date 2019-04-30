@@ -8,7 +8,8 @@
     "open": "webpack-dev-server --open",
     "test": "jest --coverage",
     "start-react": "ROOT=react npm run open",
-    "start-react-router": "ROOT=react-router npm run open"
+    "start-react-router": "ROOT=react-router npm run open",
+    "start-redux": "ROOT=redux npm run open"
   },
   "repository": {
     "type": "git",
