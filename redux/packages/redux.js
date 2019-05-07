@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const instance = [];
 const store = {
@@ -17,11 +17,30 @@ const reducers = {
   }),
 };
 
+function mergeStoreToProps(props, updater) {
+  const readyProps = {
+    ...props,
+  };
+  const keys = Object.keys(updater);
+  keys.forEach((key) => {
+    readyProps[key] = updater[key];
+  });
+  return readyProps;
+}
+
 const commit = ({ type, payload }) => {
   const updater = reducers[type](payload, store);
   const updaterKeys = Object.keys(updater);
   updaterKeys.forEach((key) => {
     store[key] = updater[key];
+  });
+  instance.forEach((ins) => {
+    const selfRender = ins.render;
+    ins.render = selfRender.bind({
+      ...ins,
+      props: mergeStoreToProps(ins.props, updater),
+    });
+    ins.forceUpdate();
   });
   return store;
 };
@@ -45,9 +64,12 @@ function connect(methods) {
         ...dispatchersProps,
         dispatch,
       };
-      // Target.getDerivedStateFromProps = function(props, state) {
-
-      // }
+      // 保留并执行原来的钩子函数
+      const selfComponentWillMount = Target.prototype.componentWillMount;
+      Target.prototype.componentWillMount = function componentWillMount() {
+        selfComponentWillMount && selfComponentWillMount.call(this);
+        instance.push(this);
+      };
       return <Target {...wrapperedProps} />;
     };
   };
@@ -58,7 +80,26 @@ function getState(key) {
   return store[key];
 }
 
+// class Provider extends Component {
+//   render() {
+//     const {
+//       children,
+//     } = this.props;
+//     return (
+//       <React.Fragment>
+//         {{
+//           ...children,
+//           store: {
+//             getState,
+//           },
+//         }}
+//       </React.Fragment>
+//     );
+//   }
+// }
+
 export {
+  // Provider,
   connect,
   getState,
 };

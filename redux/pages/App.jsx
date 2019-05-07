@@ -1,5 +1,6 @@
 import {connect, getState} from '../packages/redux';
 import React, { Component } from 'react';
+import Person from './Person';
 class App extends Component {
   componentDidMount() {
     this.props.dispatch({
@@ -10,16 +11,16 @@ class App extends Component {
       }
     })
   }
-  static getDerivedStateFromProps(props, state) {
-    
-  }
   render() {
     const {
       name,
       age
     } = this.props.user;
     return (
-      <div>My name is {name}, my age is {age}.</div>
+      <div>
+        <p>My name is {name}, my age is {age}.</p>
+        <Person name={name} age={age} />
+      </div>
     )
   }
 }
