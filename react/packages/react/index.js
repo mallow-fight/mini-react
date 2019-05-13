@@ -66,7 +66,6 @@ Component.prototype.noticeUpdate = function noticeUpdate(lifeCycleName, root, cb
         children,
       } = root;
       const newRender = render.apply(context);
-      console.log(context, newRender, '^^^^');
       const newTree = new Root({
         ...newRender,
         parent: root,

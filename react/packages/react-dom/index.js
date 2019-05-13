@@ -44,5 +44,6 @@ export function render({tag, type, props, children}, container, parent = null) {
   const html = getHtmlFromRoot(root);
   updateContainer(container, html);
   container.$root = root;
+  console.log(root);
   return container;
 }
