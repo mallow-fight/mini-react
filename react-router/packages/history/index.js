@@ -55,6 +55,12 @@ class Link extends Component {
     window.history.pushState(null, null, this.props.to);
     console.log(instances);
     instances.forEach(instance => instance.forceUpdate());
+    // 可以这样，在合适的时机直接调用回调函数来更新视图
+    // history.push(() => {
+    //   this.setState({
+    //     path: xxx
+    //   })
+    // })
   }
 
   render() {
